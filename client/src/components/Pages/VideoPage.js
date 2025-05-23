@@ -54,6 +54,7 @@ const VideoPage = () => {
 
     // const vidNumber = parseInt(vid, 10);
     // const vv = vids?.data.filter((q) => q._id === vid)[0];
+    // http://localhost:5000
 
     const vv = vids?.data?.find((q) => q._id === vid); // safer than filter + [0]
 
@@ -86,7 +87,7 @@ const VideoPage = () => {
             <div className="container_videoPage">
                 <div className="container2_videoPage">
                     <div className="video_display_screen_videoPage">
-                        <video src={`http://localhost:5000/${vv?.filepath}`} className="video_ShowVideo_videoPage" controls></video>
+                        <video src={`https://youtube-ry5z.onrender.com/${vv?.filepath}`} className="video_ShowVideo_videoPage" controls></video>
                         <div className='video_details_videoPage'>
                             <div className='.video_btns_title_VideoPage_cont'>
                                 <p className="video_title_VideoPage">
